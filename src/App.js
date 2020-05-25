@@ -7,6 +7,8 @@ import './App.css';
 
 import Home from './pages/Home'
 import Navbar from './components/Navbar'
+import Wedding from './pages/Wedding'
+import Potrait from './pages/Potrait'
 
 
 
@@ -15,7 +17,9 @@ function App() {
     <>
       <Navbar />
       <Router>
-        <Route to="/" exact component={Home} />
+        <Route path="/" exact component={Home} />
+        <Route path="/wedding" component={Wedding} />
+        <Route path="/potrait" component={Potrait} />
       </Router>
     </>
   );
